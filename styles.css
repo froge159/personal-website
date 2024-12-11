@@ -40,7 +40,11 @@ a {
 
 section {
   width: 100%;
-  height: 100vh;
+  height: var(--initial-height, 100vh);
+}
+
+section:not(:first-of-type) {
+  margin-top: 5vw;
 }
 
 header {
@@ -63,7 +67,7 @@ header {
 #main-header {
   width: 700px;
   position: absolute;
-  left: 100px;
+  left: 7vw;
   top: 28vw;
 }
 
@@ -98,7 +102,7 @@ header {
   font-family: "Inter Regular";
   justify-content: space-evenly;
   margin: auto;
-  margin-top: 5rem;
+  margin-top: 7vw;
   width: 80vw;
 }
 
@@ -132,7 +136,5 @@ header {
   #skills-list {
     flex-direction: column;
   }
-  #projects {
-    order: 2;
-  }
+  
 }
