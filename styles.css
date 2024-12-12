@@ -44,7 +44,7 @@ section {
 }
 
 section:not(:first-of-type) {
-  margin-top: 5vw;
+  padding-top: 3vw;
 }
 
 header {
@@ -109,13 +109,13 @@ header {
 .skill-icon {
   font-size: 10vw;
   text-align: center;
-  padding-top: 2vw;
+  padding-top: 2.3vw;
   padding-bottom: 0.1vw;
 }
 
 .skill-p {
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
 }
 
 .skill-card {
@@ -128,13 +128,38 @@ header {
 }
 
 #java-card i {
-  padding-top: 1.4vw;
+  padding-top: 1.8vw;
   padding-bottom: 0.5vw;
 }
 
-@media (max-width: 700px) {
+#projects-header {
+	text-align: left;
+}
+
+@media (max-width: 1100px) {
+	#skills {
+		height: auto;
+	}
   #skills-list {
     flex-direction: column;
+		align-items: center;
   }
-  
+  .skill-card:not(:first-of-type) {
+		margin-top: 2.5rem;
+	}
+	.skill-card	{
+		width: 13rem;
+		height: 19.2rem;
+  }
+	.skill-icon {
+		font-size: 11.5rem;
+		padding-top: 2.8rem;
+		padding-bottom: none;
+	}
+	#java-card i {
+		padding-top: 2.2rem;
+	}
+	.skill-p {
+		font-size: 1.3rem;
+	}
 }
