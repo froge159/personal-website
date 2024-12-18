@@ -121,7 +121,7 @@ header {
 .skill-card {
   background-color: rgba(125, 123, 149, 0.19);
   width: 11.5vw;
-  height: 17vw ;
+  height: 17vw;
   display: flex;
   flex-direction: column;
   border-radius: 10%;
@@ -133,7 +133,7 @@ header {
 }
 
 #projects-header-text {
-	text-align: left;
+  text-align: left;
 }
 
 #projects-header {
@@ -145,7 +145,7 @@ header {
 #line {
   height: 0;
   width: 19vw;
-  border: 0.5px solid #D9CECE;
+  border: 0.5px solid #d9cece;
   opacity: 20%;
   margin-left: 2rem;
 }
@@ -192,52 +192,164 @@ header {
   margin-top: 2.2rem;
 }
 
+#blog-header {
+  display: flex;
+  justify-content: center;
+}
 
-@media (max-width: 1100px) {
-	#skills {
-		height: auto;
-	}
+#header-icon {
+  font-size: 1.5rem;
+  margin-top: 28px;
+  margin-left: 20px;
+}
+
+.blog-card-title {
+  font-family: "Inter SemiBold", "sans-serif";
+  font-size: 1.3rem;
+  position: relative;
+  top: 2.2rem;
+  left: 2.1rem;
+}
+
+.blog-card-preview {
+  font-family: "League Spartan Light";
+  font-size: 1.3rem;
+  width: 18rem;
+  position: relative;
+  top: 4.1rem;
+  left: 2.1rem;
+}
+
+.blog-card-link {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  left: 19.5rem;
+  top: 1.5rem;
+}
+
+.fa-tag {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  margin-right: 1rem;
+  margin-top: 1.4rem;
+}
+
+.tag-label {
+  font-family: "League Spartan Light", "sans-serif";
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255, 0.5);
+  margin-right: 1rem;
+}
+
+#blogs-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 5rem;
+  width: 80vw;
+}
+
+.blog-card {
+  background-color: rgb(125, 123, 149, 0.26);
+  border-radius: 7%;
+  width: 22rem;
+  height: 21rem;
+}
+
+.blog-card-labels {
+  display: flex;
+  position: relative;
+  top: 5rem;
+  left: 2.1rem;
+}
+
+#footer {
+  height: 0;
+}
+
+
+
+
+
+@media (max-width: 1350px) {
+  #skills {
+    height: auto;
+  }
 
   #skills-list {
     flex-direction: column;
-		align-items: center;
+    align-items: center;
   }
 
   .skill-card:not(:first-of-type) {
-		margin-top: 2.5rem;
-	}
-
-	.skill-card	{
-		width: 13rem;
-		height: 19.2rem;
+    margin-top: 2.5rem;
   }
 
-	.skill-icon {
-		font-size: 11.5rem;
-		padding-top: 2.8rem;
-		padding-bottom: none;
-	}
+  .skill-card {
+    width: 13rem;
+    height: 19.2rem;
+  }
 
-	#java-card i {
-		padding-top: 2.2rem;
-	}
+  .skill-icon {
+    font-size: 11.5rem;
+    padding-top: 2.8rem;
+    padding-bottom: none;
+  }
 
-	.skill-p {
-		font-size: 1.3rem;
-	}
-}
+  #java-card i {
+    padding-top: 2.2rem;
+  }
 
-@media (max-width: 1350px) {
+  .skill-p {
+    font-size: 1.3rem;
+  }
+
   #projects {
     margin-top: 30vh;
     height: auto;
+    padding: none;
   }
 
   #projects-list {
     flex-direction: column;
   }
 
-  .project-card:last-of-type {
+  .project-card:not(:first-of-type) {
     margin-top: 10rem;
   }
+
+  #blog {
+    height: auto;
+    margin-top: 30vh;
+    padding: none;
+  }
+
+  #blogs-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-card:not(:first-of-type) {
+    margin-top: 10rem;
+  }
+
+  #footer {
+    height: 8rem;
+  }
+}
+
+@media (max-width: 642px) {
+  .project-card {
+    width: 80vw;
+    height: 60vw;
+  }
+
+  #projects-list img {
+    width: 85%;
+    height: auto;
+  }
+
+
+
 }

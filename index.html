@@ -5,7 +5,10 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles.css" />
     <title>froge159</title>
-    <script src="https://kit.fontawesome.com/33118d86ea.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/33118d86ea.js"
+      crossorigin="anonymous"
+    ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
@@ -15,21 +18,20 @@
         <a href="#skills">skills</a>
         <a href="#projects">work</a>
         <a href="#blog">blog</a>
-        <a href="#links">links</a>
       </nav>
       <div id="main-header">
         <div id="main-header-text">
           <h1>froge159</h1>
-          <i
-            id="code-icon"
-            class="fa fa-solid fa-code"
-          ></i>
+          <i id="code-icon" class="fa fa-solid fa-code"></i>
         </div>
         <div id="main-header-links">
           <a href="https://github.com/froge159" target="_blank">
             <i class="fa fa-brands fa-github icon-link"></i>
           </a>
-          <a href="https://discord.com/users/765613168180461628" target="_blank">
+          <a
+            href="https://discord.com/users/765613168180461628"
+            target="_blank"
+          >
             <i class="fa-brands fa-discord icon-link"></i>
           </a>
           <a href="https://www.instagram.com/froge1591/" target="_blank">
@@ -86,7 +88,7 @@
         <header id="projects-header-text">projects</header>
         <div id="line"></div>
       </div>
-      
+
       <div id="projects-list">
         <div class="project-card">
           <div class="project-card-top">
@@ -101,7 +103,7 @@
             src="assets/media/jeremy-ss.png"
             alt="jeremy fragrance screenshot"
           />
-        </div>	
+        </div>
         <div class="project-card">
           <div class="project-card-top">
             <p>java guide</p>
@@ -120,56 +122,59 @@
     </section>
 
     <section id="blog">
-      <header id="blog-header">
-        <h2>recent blogs</h2>
-        <i class="fa fa-solid fa-arrow-up-right-from-square"></i>
-      </header>
+      <div id="blog-header">
+        <header>recent blogs</header>
+        <a href=""><i class="fa fa-solid fa-arrow-up-right-from-square" id="header-icon"></i></a>
+      </div>
       <div id="blogs-list">
         <div class="blog-card">
-          <i class="fa fa-solid fa-arrow-up-right-from-square"></i>
-          <h3>Lorem ipsum dolor sit</h3>
-          <p>
+          <i class="fa fa-solid fa-arrow-up-right-from-square blog-card-link"></i>
+          <h3 class="blog-card-title">Lorem ipsum dolor sit</h3>
+          <p class="blog-card-preview">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <div class="blog-card-labels">
             <i class="fa fa-solid fa-tag"></i>
-            <p>entertainment</p>
-            <p>rant</p>
+            <p class="tag-label">entertainment</p>
+            <p class="tag-label">rant</p>
           </div>
         </div>
         <div class="blog-card">
-          <i class="fa fa-solid fa-arrow-up-right-from-square"></i>
-          <h3>Lorem ipsum dolor sit</h3>
-          <p>
+          <i class="fa fa-solid fa-arrow-up-right-from-square blog-card-link"></i>
+          <h3 class="blog-card-title">Lorem ipsum dolor sit</h3>
+          <p class="blog-card-preview">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <div class="blog-card-labels">
             <i class="fa fa-solid fa-tag"></i>
-            <p>prog</p>
+            <p class="tag-label">prog</p>
           </div>
         </div>
         <div class="blog-card">
-          <i class="fa fa-solid fa-arrow-up-right-from-square"></i>
-          <h3>Lorem ipsum dolor sit</h3>
-          <p>
+          <i class="fa fa-solid fa-arrow-up-right-from-square blog-card-link"></i>
+          <h3 class="blog-card-title" >Lorem ipsum dolor sit</h3>
+          <p class="blog-card-preview">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <div class="blog-card-labels">
             <i class="fa fa-solid fa-tag"></i>
-            <p>politics</p>
-            <p>rant</p>
+            <p class="tag-label">politics</p>
+            <p class="tag-label">rant</p>
           </div>
         </div>
       </div>
     </section>
-
+    <div id="footer"></div>
 
     <script>
       const initialHeight = window.innerHeight; // Capture initial height in pixels
-      document.documentElement.style.setProperty('--initial-height', `${initialHeight}px`);
+      document.documentElement.style.setProperty(
+        "--initial-height",
+        `${initialHeight}px`
+      );
     </script>
   </body>
 </html>
