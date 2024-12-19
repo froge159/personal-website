@@ -40,7 +40,7 @@ a {
 
 section {
   width: 100%;
-  height: var(--initial-height, 100vh);
+  height: 1000px;
 }
 
 section:not(:first-of-type) {
@@ -342,14 +342,22 @@ header {
 @media (max-width: 642px) {
   .project-card {
     width: 80vw;
-    height: 60vw;
+    height: 70vw;
+    
   }
 
   #projects-list img {
-    width: 85%;
+    width: 72vw;
     height: auto;
   }
+}
 
 
-
+@media (max-width: 459px) {
+  #line {
+    display: none;
+  }
+  #header-icon {
+    margin-left: 0px;
+  }
 }
